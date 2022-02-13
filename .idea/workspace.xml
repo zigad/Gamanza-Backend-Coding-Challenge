@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="074b5537-e1b4-490f-9587-1e1d96806d36" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/si/deisinger/DemoAplication/model/Players.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/si/deisinger/DemoAplication/repo/PlayersRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/si/deisinger/DemoAplication/service/PlayersService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/si/deisinger/DemoAplication/controller/GamesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/si/deisinger/DemoAplication/controller/GamesController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/si/deisinger/DemoAplication/controller/GamesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/si/deisinger/DemoAplication/controller/DemoApplicationController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/si/deisinger/DemoAplication/model/Games.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/si/deisinger/DemoAplication/model/Games.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/si/deisinger/DemoAplication/repo/GamesRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/si/deisinger/DemoAplication/repo/GamesRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/si/deisinger/DemoAplication/service/GamesService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/si/deisinger/DemoAplication/service/GamesService.java" afterDir="false" />
@@ -57,8 +60,11 @@
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="si.deisinger.DemoAplication" />
+      <recent name="si.deisinger.DemoAplication.controller" />
+      <recent name="si.deisinger.DemoAplication.service" />
       <recent name="si.deisinger.DemoAplication.repo" />
+      <recent name="si.deisinger.DemoAplication.model" />
+      <recent name="si.deisinger.DemoAplication" />
     </key>
   </component>
   <component name="RunManager">
@@ -115,6 +121,10 @@
           <line>241</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.sql.SQLSyntaxErrorException" package="java.sql" />
+          <option name="timeStamp" value="4" />
+        </breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

@@ -4,17 +4,17 @@ import lombok.Getter;
 import lombok.Setter;
 
 import javax.persistence.*;
+import java.util.Date;
 
 @Entity
-@Table(name = "games")
+@Table(name = "players")
 @Getter
 @Setter
-public class Games {
+public class Players {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
-    private String name;
-    private String description;
-    private String players;
-    private String images;
+    private String firstName;
+    private String lastName;
+    private Date dateOfBirth;
 }

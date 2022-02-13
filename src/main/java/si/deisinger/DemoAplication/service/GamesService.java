@@ -1,6 +1,5 @@
 package si.deisinger.DemoAplication.service;
 
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -14,6 +13,7 @@ import java.util.List;
 @Service
 @Transactional
 public class GamesService {
+
     @Autowired
     private GamesRepository gamesRepository;
 
@@ -26,11 +26,11 @@ public class GamesService {
     }
 
     public Page<Games> findByGameName(String name){
-       return gamesRepository.findByLastname(name, Pageable.unpaged());
+       return gamesRepository.findByName(name, Pageable.unpaged());
     }
 
     public Page<Games> findByGameName(String name, Pageable pageable){
-        return gamesRepository.findByLastname(name, pageable);
+        return gamesRepository.findByName(name, pageable);
     }
 
     public Games getGame(Long id) {
@@ -40,4 +40,5 @@ public class GamesService {
     public void deleteGame(Long id) {
         gamesRepository.deleteById(id);
     }
+
 }
