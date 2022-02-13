@@ -2,6 +2,8 @@ package si.deisinger.DemoAplication.service;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import si.deisinger.DemoAplication.model.Games;
 import si.deisinger.DemoAplication.repo.GamesRepository;
@@ -21,6 +23,14 @@ public class GamesService {
 
     public void saveGame(Games games) {
         gamesRepository.save(games);
+    }
+
+    public Page<Games> findByGameName(String name){
+       return gamesRepository.findByLastname(name, Pageable.unpaged());
+    }
+
+    public Page<Games> findByGameName(String name, Pageable pageable){
+        return gamesRepository.findByLastname(name, pageable);
     }
 
     public Games getGame(Long id) {
