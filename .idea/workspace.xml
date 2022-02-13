@@ -5,20 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="074b5537-e1b4-490f-9587-1e1d96806d36" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/Gamanza-Backend-Coding-Challenge-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/gamanza_db.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postman/Gamanza Backend Challenge.postman_collection.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/si/deisinger/DemoAplication/DemoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/si/deisinger/DemoApplication/DemoApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/si/deisinger/DemoAplication/controller/DemoApplicationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/si/deisinger/DemoApplication/controller/DemoApplicationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/si/deisinger/DemoAplication/model/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/si/deisinger/DemoApplication/model/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/si/deisinger/DemoAplication/model/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/si/deisinger/DemoApplication/model/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/si/deisinger/DemoAplication/repo/GamesRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/si/deisinger/DemoApplication/repo/GamesRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/si/deisinger/DemoAplication/repo/PlayersRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/si/deisinger/DemoApplication/repo/PlayersRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/si/deisinger/DemoAplication/service/GamesService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/si/deisinger/DemoApplication/service/GamesService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/si/deisinger/DemoAplication/service/PlayersService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/si/deisinger/DemoApplication/service/PlayersService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/si/deisinger/DemoApplication/GameTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/si/deisinger/DemoApplication/GameTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/si/deisinger/DemoApplication/PlayerTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/si/deisinger/DemoApplication/PlayerTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/si/deisinger/DemoApplication/controller/DemoApplicationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/si/deisinger/DemoApplication/controller/DemoApplicationController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +43,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/si/deisinger/DemoAplication" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/database" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -59,6 +54,8 @@
       <recent name="si.deisinger.DemoAplication.model" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/database" />
+      <recent name="$PROJECT_DIR$/build" />
       <recent name="$PROJECT_DIR$/src/main/resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -73,7 +70,7 @@
       <recent name="si.deisinger.DemoAplication.model" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.DemoApplication">
+  <component name="RunManager" selected="Docker.Dockerfile">
     <configuration name="DemoApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="si.deisinger.DemoApplication.DemoApplication" />
       <module name="Gamanza-Backend-Coding-Challenge" />
@@ -133,29 +130,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PlayerTests.findByLastName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Gamanza-Backend-Coding-Challenge" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="si.deisinger.DemoApplication.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="si.deisinger.DemoApplication" />
-      <option name="MAIN_CLASS_NAME" value="si.deisinger.DemoApplication.PlayerTests" />
-      <option name="METHOD_NAME" value="findByLastName" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="containerName" value="" />
+          <option name="sourceFilePath" value="Dockerfile" />
+        </settings>
+      </deployment>
+      <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Docker.Dockerfile" />
         <item itemvalue="Application.DemoApplication" />
         <item itemvalue="JUnit.GameTests" />
         <item itemvalue="JUnit.PlayerTests" />
         <item itemvalue="JUnit.PlayerTests.createAndDeletePlayer" />
-        <item itemvalue="JUnit.PlayerTests.findByLastName" />
       </list>
     </recent_temporary>
   </component>

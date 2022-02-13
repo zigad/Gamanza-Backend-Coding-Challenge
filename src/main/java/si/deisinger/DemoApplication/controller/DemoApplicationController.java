@@ -32,7 +32,7 @@ public class DemoApplicationController {
 	/**
 	 * GET Request will return all available games in the database with all available information
 	 *
-	 * @return
+	 * @return list of all games
 	 */
 	@GetMapping("games")
 	public List<Game> listGames() {
@@ -49,9 +49,9 @@ public class DemoApplicationController {
 	public ResponseEntity<Game> getGame(@PathVariable Long id) {
 		try {
 			Game game = gamesService.getGame(id);
-			return new ResponseEntity<Game>(game, HttpStatus.OK);
+			return new ResponseEntity<>(game, HttpStatus.OK);
 		} catch (NoSuchElementException e) {
-			return new ResponseEntity<Game>(HttpStatus.NOT_FOUND);
+			return new ResponseEntity<>(HttpStatus.NOT_FOUND);
 		}
 	}
 
@@ -116,7 +116,7 @@ public class DemoApplicationController {
 	/**
 	 * GET Request will return all available players in the database with all available information
 	 *
-	 * @return
+	 * @return all available players.
 	 */
 	@GetMapping("players")
 	public List<Player> listPlayers() {
@@ -133,9 +133,9 @@ public class DemoApplicationController {
 	public ResponseEntity<Player> getPlayer(@PathVariable Long id) {
 		try {
 			Player games = playersService.getPlayer(id);
-			return new ResponseEntity<Player>(games, HttpStatus.OK);
+			return new ResponseEntity<>(games, HttpStatus.OK);
 		} catch (NoSuchElementException e) {
-			return new ResponseEntity<Player>(HttpStatus.NOT_FOUND);
+			return new ResponseEntity<>(HttpStatus.NOT_FOUND);
 		}
 	}
 
@@ -143,8 +143,6 @@ public class DemoApplicationController {
 	 * POST Request for creating new player in the database.
 	 *
 	 * @param games POST request must be Content-Type: JSON
-	 *              Example body:
-	 *              TODO
 	 */
 	@PostMapping("players")
 	public void addPlayer(@RequestBody Player games) {
