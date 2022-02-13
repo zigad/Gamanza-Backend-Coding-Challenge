@@ -4,7 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
-import si.deisinger.DemoAplication.model.Players;
+import si.deisinger.DemoAplication.model.Player;
 import si.deisinger.DemoAplication.repo.PlayersRepository;
 
 import javax.transaction.Transactional;
@@ -17,23 +17,23 @@ public class PlayersService {
     @Autowired
     private PlayersRepository playersRepository;
 
-    public List<Players> listAllPlayers() {
+    public List<Player> listAllPlayers() {
         return playersRepository.findAll();
     }
 
-    public void savePlayer(Players players) {
-        playersRepository.save(players);
+    public void savePlayer(Player player) {
+        playersRepository.save(player);
     }
 
-    public Page<Players> findByLastName(String lastName){
+    public Page<Player> findByLastName(String lastName){
         return playersRepository.findByLastName(lastName, Pageable.unpaged());
     }
 
-    public Page<Players> findByLastName(String lastName, Pageable pageable){
+    public Page<Player> findByLastName(String lastName, Pageable pageable){
         return playersRepository.findByLastName(lastName, pageable);
     }
 
-    public Players getPlayer(Long id) {
+    public Player getPlayer(Long id) {
         return playersRepository.findById(id).get();
     }
 

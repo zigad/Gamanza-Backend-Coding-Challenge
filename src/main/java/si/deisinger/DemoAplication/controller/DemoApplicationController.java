@@ -7,8 +7,8 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import si.deisinger.DemoAplication.model.Games;
-import si.deisinger.DemoAplication.model.Players;
+import si.deisinger.DemoAplication.model.Game;
+import si.deisinger.DemoAplication.model.Player;
 import si.deisinger.DemoAplication.service.GamesService;
 import si.deisinger.DemoAplication.service.PlayersService;
 
@@ -33,7 +33,7 @@ public class DemoApplicationController {
      * @return
      */
     @GetMapping("games")
-    public List<Games> listGames() {
+    public List<Game> listGames() {
         return gamesService.listAllGames();
     }
 
@@ -46,18 +46,18 @@ public class DemoApplicationController {
      * All information available in database
      */
     @GetMapping("games/{id}")
-    public ResponseEntity<Games> getGame(@PathVariable Long id) {
+    public ResponseEntity<Game> getGame(@PathVariable Long id) {
         try {
-            Games games = gamesService.getGame(id);
-            return new ResponseEntity<Games>(games, HttpStatus.OK);
+            Game game = gamesService.getGame(id);
+            return new ResponseEntity<Game>(game, HttpStatus.OK);
         } catch (NoSuchElementException e) {
-            return new ResponseEntity<Games>(HttpStatus.NOT_FOUND);
+            return new ResponseEntity<Game>(HttpStatus.NOT_FOUND);
         }
     }
 
     /**
      * POST Request for creating new GAME in the database.
-     * @param games
+     * @param game
      * POST request must be Content-Type: JSON
      * Example body:
      * {
@@ -68,8 +68,8 @@ public class DemoApplicationController {
      * }
      */
     @PostMapping("games")
-    public void addGame(@RequestBody Games games) {
-        gamesService.saveGame(games);
+    public void addGame(@RequestBody Game game) {
+        gamesService.saveGame(game);
     }
 
     /**
@@ -90,7 +90,7 @@ public class DemoApplicationController {
      * @return results
      */
     @GetMapping("games/search")
-    public Page<Games> searchGames(@RequestParam String name, @RequestParam(required = false) Integer size, @RequestParam(required = false, defaultValue = "0") int page) {
+    public Page<Game> searchGames(@RequestParam String name, @RequestParam(required = false) Integer size, @RequestParam(required = false, defaultValue = "0") int page) {
        if (size == null){
            return gamesService.findByGameName(name);
        } else {
@@ -103,8 +103,8 @@ public class DemoApplicationController {
      * PUT Request for modifying existing value in database
      */
     @PutMapping("games/{id}")
-    public void updateGame(@RequestBody Games newGame, @PathVariable Long id) {
-        Games updatedGame = gamesService.getGame(id);
+    public void updateGame(@RequestBody Game newGame, @PathVariable Long id) {
+        Game updatedGame = gamesService.getGame(id);
         updatedGame.setName(newGame.getName());
         updatedGame.setDescription(newGame.getDescription());
         updatedGame.setImages(newGame.getImages());
@@ -117,7 +117,7 @@ public class DemoApplicationController {
      * @return
      */
     @GetMapping("players")
-    public List<Players> listPlayers() {
+    public List<Player> listPlayers() {
         return playersService.listAllPlayers();
     }
 
@@ -131,12 +131,12 @@ public class DemoApplicationController {
      * All information available in database
      */
     @GetMapping("players/{id}")
-    public ResponseEntity<Players> getPlayer(@PathVariable Long id) {
+    public ResponseEntity<Player> getPlayer(@PathVariable Long id) {
         try {
-            Players games = playersService.getPlayer(id);
-            return new ResponseEntity<Players>(games, HttpStatus.OK);
+            Player games = playersService.getPlayer(id);
+            return new ResponseEntity<Player>(games, HttpStatus.OK);
         } catch (NoSuchElementException e) {
-            return new ResponseEntity<Players>(HttpStatus.NOT_FOUND);
+            return new ResponseEntity<Player>(HttpStatus.NOT_FOUND);
         }
     }
 
@@ -148,7 +148,7 @@ public class DemoApplicationController {
      * TODO
      */
     @PostMapping("players")
-    public void addPlayer(@RequestBody Players games) {
+    public void addPlayer(@RequestBody Player games) {
         playersService.savePlayer(games);
     }
 
@@ -170,7 +170,7 @@ public class DemoApplicationController {
      * @return results
      */
     @GetMapping("players/search")
-    public Page<Players> searchPlayers(@RequestParam String lastName, @RequestParam(required = false) Integer size, @RequestParam(required = false, defaultValue = "0") int page) {
+    public Page<Player> searchPlayers(@RequestParam String lastName, @RequestParam(required = false) Integer size, @RequestParam(required = false, defaultValue = "0") int page) {
         if (size == null){
             return playersService.findByLastName(lastName);
         } else {
@@ -183,8 +183,8 @@ public class DemoApplicationController {
      * PUT Request for modifying existing value in database
      */
     @PutMapping("players/{id}")
-    public void updatePlayer(@RequestBody Players newPlayer, @PathVariable Long id) {
-        Players updatedPlayer = playersService.getPlayer(id);
+    public void updatePlayer(@RequestBody Player newPlayer, @PathVariable Long id) {
+        Player updatedPlayer = playersService.getPlayer(id);
         updatedPlayer.setFirstName(newPlayer.getFirstName());
         updatedPlayer.setLastName(newPlayer.getLastName());
         updatedPlayer.setDateOfBirth(newPlayer.getDateOfBirth());

@@ -5,14 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="074b5537-e1b4-490f-9587-1e1d96806d36" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/si/deisinger/DemoAplication/model/Players.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/si/deisinger/DemoAplication/repo/PlayersRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/si/deisinger/DemoAplication/service/PlayersService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/si/deisinger/DemoApplication/GameTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/si/deisinger/DemoApplication/PlayerTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/si/deisinger/DemoAplication/controller/GamesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/si/deisinger/DemoAplication/controller/DemoApplicationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/si/deisinger/DemoAplication/model/Games.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/si/deisinger/DemoAplication/model/Games.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/si/deisinger/DemoAplication/controller/DemoApplicationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/si/deisinger/DemoAplication/controller/DemoApplicationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/si/deisinger/DemoAplication/model/Games.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/si/deisinger/DemoAplication/model/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/si/deisinger/DemoAplication/model/Players.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/si/deisinger/DemoAplication/model/Player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/si/deisinger/DemoAplication/repo/GamesRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/si/deisinger/DemoAplication/repo/GamesRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/si/deisinger/DemoAplication/repo/PlayersRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/si/deisinger/DemoAplication/repo/PlayersRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/si/deisinger/DemoAplication/service/GamesService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/si/deisinger/DemoAplication/service/GamesService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/si/deisinger/DemoAplication/service/PlayersService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/si/deisinger/DemoAplication/service/PlayersService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +46,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/si/deisinger/DemoAplication" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.repository.indices" />
@@ -60,14 +62,14 @@
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="si.deisinger.DemoApplication" />
       <recent name="si.deisinger.DemoAplication.controller" />
       <recent name="si.deisinger.DemoAplication.service" />
       <recent name="si.deisinger.DemoAplication.repo" />
       <recent name="si.deisinger.DemoAplication.model" />
-      <recent name="si.deisinger.DemoAplication" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.GameTests">
     <configuration name="DemoApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="si.deisinger.DemoAplication.DemoApplication" />
       <module name="Gamanza-Backend-Coding-Challenge" />
@@ -81,8 +83,75 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="GameTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Gamanza-Backend-Coding-Challenge" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="si.deisinger.DemoApplication.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="si.deisinger.DemoApplication" />
+      <option name="MAIN_CLASS_NAME" value="si.deisinger.DemoApplication.GameTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PlayerTests.createAndDeletePlayer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Gamanza-Backend-Coding-Challenge" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="si.deisinger.DemoApplication.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="si.deisinger.DemoApplication" />
+      <option name="MAIN_CLASS_NAME" value="si.deisinger.DemoApplication.PlayerTests" />
+      <option name="METHOD_NAME" value="createAndDeletePlayer" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PlayerTests.findById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Gamanza-Backend-Coding-Challenge" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="si.deisinger.DemoApplication.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="si.deisinger.DemoApplication" />
+      <option name="MAIN_CLASS_NAME" value="si.deisinger.DemoApplication.PlayerTests" />
+      <option name="METHOD_NAME" value="findById" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PlayerTests.findByLastName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Gamanza-Backend-Coding-Challenge" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="si.deisinger.DemoApplication.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="si.deisinger.DemoApplication" />
+      <option name="MAIN_CLASS_NAME" value="si.deisinger.DemoApplication.PlayerTests" />
+      <option name="METHOD_NAME" value="findByLastName" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.GameTests" />
+        <item itemvalue="JUnit.PlayerTests.createAndDeletePlayer" />
+        <item itemvalue="JUnit.PlayerTests.findByLastName" />
+        <item itemvalue="JUnit.PlayerTests.findById" />
         <item itemvalue="Application.DemoApplication" />
       </list>
     </recent_temporary>
@@ -116,11 +185,6 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-jpa/2.6.1/spring-data-jpa-2.6.1.jar!/org/springframework/data/jpa/repository/support/SimpleJpaRepository.class</url>
-          <line>241</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.sql.SQLSyntaxErrorException" package="java.sql" />
           <option name="timeStamp" value="4" />

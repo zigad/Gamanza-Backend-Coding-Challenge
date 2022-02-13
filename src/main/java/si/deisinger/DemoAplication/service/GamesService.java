@@ -4,7 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
-import si.deisinger.DemoAplication.model.Games;
+import si.deisinger.DemoAplication.model.Game;
 import si.deisinger.DemoAplication.repo.GamesRepository;
 
 import javax.transaction.Transactional;
@@ -17,23 +17,23 @@ public class GamesService {
     @Autowired
     private GamesRepository gamesRepository;
 
-    public List<Games> listAllGames() {
+    public List<Game> listAllGames() {
         return gamesRepository.findAll();
     }
 
-    public void saveGame(Games games) {
-        gamesRepository.save(games);
+    public void saveGame(Game game) {
+        gamesRepository.save(game);
     }
 
-    public Page<Games> findByGameName(String name){
+    public Page<Game> findByGameName(String name){
        return gamesRepository.findByName(name, Pageable.unpaged());
     }
 
-    public Page<Games> findByGameName(String name, Pageable pageable){
+    public Page<Game> findByGameName(String name, Pageable pageable){
         return gamesRepository.findByName(name, pageable);
     }
 
-    public Games getGame(Long id) {
+    public Game getGame(Long id) {
         return gamesRepository.findById(id).get();
     }
 

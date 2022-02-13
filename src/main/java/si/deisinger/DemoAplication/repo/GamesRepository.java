@@ -4,11 +4,11 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
-import si.deisinger.DemoAplication.model.Games;
+import si.deisinger.DemoAplication.model.Game;
 
-public interface GamesRepository extends JpaRepository<Games, Long> {
+public interface GamesRepository extends JpaRepository<Game, Long> {
 
     @Query(value = "SELECT * FROM GAMES WHERE NAME = ?1",
             nativeQuery = true)
-    Page<Games> findByName(String name, Pageable pageable);
+    Page<Game> findByName(String name, Pageable pageable);
 }
